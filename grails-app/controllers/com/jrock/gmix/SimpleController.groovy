@@ -13,7 +13,8 @@ class SimpleController {
     	proxy.initialize()
     	proxy.soapCall()
     	
-		redirect(uri:'/')
-		//redirect(url:'http://www.cnn.com')
+    	log.debug "done with WS call!"
+    	
+		redirect(uri:'/')		
     }
 }
